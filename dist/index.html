@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Recipes</title>
+</head>
+
+<body>
+    <div id="input-container">
+        <input type="text" placeholder="enter the ingredient ">
+        <button id="search-btn">Search <i class="fa fa-search" aria-hidden="true"></i></i></button>
+    </div>
+    <div id="recipes">
+
+    </div>
+    <script id="recipes-template" type="text/x-handlebars">
+        {{#each recipes}}
+        <div style="border: 1px solid black;">
+            <h2> <a href="{{video}}" URL> {{title}} </a>  </h2>
+            <img src="{{pic}}" alt="">
+            <ul>
+                for(let i=0 ; i< {{ingredient}}.length ; i++}){
+                    <li> {{ingredient[i]}} </li>
+                }
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/handlebars/dist/handlebars.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
